@@ -169,3 +169,4 @@ tests/configtest.ini
 
 #ruff cache
 .ruff_cache
+src/three_d_fin/3DFinconfig.ini
