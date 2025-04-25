@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Tahi_Area2_full_sample",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "/Users/andrewcottam/Documents/GitHub/3DFin/src/three_d_fin/__main__.py",
+        "args": [
+          "cli",
+          "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_full_sample.las",
+          "/Users/andrewcottam/Documents/GitHub/3DFin/outputs/tahi_area2_full_sample",
+          "/Users/andrewcottam/Documents/GitHub/3DFin/src/three_d_fin/3DFinconfig.ini",
+          "--normalize",
+          "--denoise"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false
+      }
+    ]
+  }
+  
