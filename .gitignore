@@ -163,7 +163,7 @@ cython_debug/
 
 # Added
 code/.Rhistory
-.vscode/
+# .vscode/
 # Avoid to commit a test config file
 tests/configtest.ini
 
