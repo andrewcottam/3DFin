@@ -1,0 +1,219 @@
+(3dfin) andrew@lidar-processor:~/GitHub/3DFin$ 3DFin cli /home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full.las /home/andrew/Downloads/Data/tahi/lidar/3dfin_output /home/andrew/GitHub/3DFin/src/three_d_fin/3DFinconfig.ini --normalize --denoise
+3DFin: Forest Inventory Copyright (C) 2023 Carlos Cabo & Diego Laino.
+This program comes with ABSOLUTELY NO WARRANTY. This is a free software, and you are welcome to redistribute it under certain conditions.
+See License at the bottom of 'About' tab for more details or visit <https://www.gnu.org/licenses/>
+---------------------------------------------
+Analyzing cloud size...
+---------------------------------------------
+      -Voxelization
+         Voxel resolution: 1.00 x 1.00 x 2000.00 m
+         1.39 s: scaling and translating
+         2.72 s: encoding
+         14.91 s: 1st sorting
+         32.12 s: 2nd sorting
+         34.02 s: extracting uniques values
+         35.46 s: decomposing code
+         35.46 s: rescaling and translating back
+         123.43 million points -> 0.02 million voxels
+         Voxels account for 0.02 % of original points
+   This cloud has 123.43 million points
+   Its area is  21419 m^2
+---------------------------------------------
+Cloud is not normalized...
+---------------------------------------------
+---------------------------------------------
+And there is noise. Reducing it...
+---------------------------------------------
+      -Voxelization
+         Voxel resolution: 0.15 x 0.15 x 0.15 m
+         1.43 s: scaling and translating
+         2.78 s: encoding
+         24.43 s: 1st sorting
+         43.86 s: 2nd sorting
+         46.11 s: extracting uniques values
+         47.87 s: decomposing code
+         48.02 s: rescaling and translating back
+         123.43 million points -> 8.28 million voxels
+         Voxels account for 6.71 % of original points
+         117.79 s: denoising
+---------------------------------------------
+Generating a Digital Terrain Model...
+---------------------------------------------
+Configuring terrain...
+ - bbMin: 1.73588e+06 -77.9919 6.04813e+06
+ - bbMax: 1.7361e+06 -43.3487 6.04828e+06
+Configuring cloth...
+ - width: 435 height: 297
+Rasterizing...
+Simulating...
+ - post handle...
+         4.72 s: generating the DTM
+---------------------------------------------
+Cleaning and exporting the Digital Terrain Model...
+---------------------------------------------
+         2.16 s: exporting the DTM
+---------------------------------------------
+Normalizing the point cloud and running the algorithm...
+---------------------------------------------
+      -Voxelization
+         Voxel resolution: 1.00 x 1.00 x 0.25 m
+         0.92 s: scaling and translating
+         1.54 s: encoding
+         5.16 s: 1st sorting
+         10.36 s: 2nd sorting
+         10.94 s: extracting uniques values
+         11.40 s: decomposing code
+         11.40 s: rescaling and translating back
+         42.49 million points -> 0.02 million voxels
+         Voxels account for 0.04 % of original points
+         30.57 s: Normalizing the point cloud
+         => Normalization area discrepancy: 10.95 %
+         198.03 s: Total preprocessing time
+---------------------------------------------
+1.-Extracting the stripe and peeling the stems...
+---------------------------------------------
+Iteration number 1 out of 2
+ -Computing verticality...
+      -Voxelization
+         Voxel resolution: 0.02 x 0.02 x 0.02 m
+         0.15 s: scaling and translating
+         0.25 s: encoding
+         0.97 s: 1st sorting
+         1.57 s: 2nd sorting
+         1.70 s: extracting uniques values
+         1.91 s: decomposing code
+         1.99 s: rescaling and translating back
+         5.38 million points -> 4.20 million voxels
+         Voxels account for 78.14 % of original points
+   4.49 s
+ -Clustering...
+      -Voxelization
+         Voxel resolution: 0.02 x 0.02 x 0.02 m
+         0.03 s: scaling and translating
+         0.05 s: encoding
+         0.20 s: 1st sorting
+         0.32 s: 2nd sorting
+         0.35 s: extracting uniques values
+         0.39 s: decomposing code
+         0.40 s: rescaling and translating back
+         1.32 million points -> 1.05 million voxels
+         Voxels account for 79.67 % of original points
+   4.03 s
+ -Extracting 'candidate' stems...
+   0.14 s
+   8.67 s per iteration
+    101  clusters
+Iteration number 2 out of 2
+ -Computing verticality...
+      -Voxelization
+         Voxel resolution: 0.02 x 0.02 x 0.02 m
+         0.00 s: scaling and translating
+         0.00 s: encoding
+         0.00 s: 1st sorting
+         0.00 s: 2nd sorting
+         0.00 s: extracting uniques values
+         0.01 s: decomposing code
+         0.01 s: rescaling and translating back
+         0.03 million points -> 0.02 million voxels
+         Voxels account for 80.41 % of original points
+   0.08 s
+ -Clustering...
+      -Voxelization
+         Voxel resolution: 0.02 x 0.02 x 0.02 m
+         0.00 s: scaling and translating
+         0.00 s: encoding
+         0.00 s: 1st sorting
+         0.00 s: 2nd sorting
+         0.00 s: extracting uniques values
+         0.00 s: decomposing code
+         0.00 s: rescaling and translating back
+         0.02 million points -> 0.02 million voxels
+         Voxels account for 79.58 % of original points
+   0.08 s
+ -Extracting 'candidate' stems...
+   0.00 s
+   0.17 s per iteration
+    50  clusters
+Final:
+8.84 s in total (whole process)
+---------------------------------------------
+2.-Computing distances to axes and individualizating trees...
+---------------------------------------------
+      -Voxelization
+         Voxel resolution: 0.04 x 0.04 x 0.04 m
+         1.40 s: scaling and translating
+         2.74 s: encoding
+         40.34 s: 1st sorting
+         73.26 s: 2nd sorting
+         79.69 s: extracting uniques values
+         84.94 s: decomposing code
+         86.04 s: rescaling and translating back
+         123.43 million points -> 64.91 million voxels
+         Voxels account for 52.58 % of original points
+
+Progress [████████████████████████████████████████████████████████████] 50/50
+      -Voxelization
+         Voxel resolution: 0.30 x 0.30 x 0.30 m
+         1.52 s: scaling and translating
+         2.52 s: encoding
+         5.45 s: 1st sorting
+         10.71 s: 2nd sorting
+         11.86 s: extracting uniques values
+         12.39 s: decomposing code
+         12.42 s: rescaling and translating back
+         64.91 million points -> 2.07 million voxels
+         Voxels account for 3.19 % of original points
+  
+---------------------------------------------
+3.-Exporting complete cloud and stripe...
+---------------------------------------------
+Total time:    134.74 s
+---------------------------------------------
+4.-Extracting and curating stems...
+---------------------------------------------
+Iteration number 1 out of 2
+ -Computing verticality...
+Traceback (most recent call last):
+  File "/home/andrew/miniconda3/envs/3dfin/bin/3DFin", line 8, in <module>
+    sys.exit(launch_application())
+             ~~~~~~~~~~~~~~~~~~^^
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/three_d_fin/processing/__init__.py", line 176, in launch_application
+    fin_processing.process()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/three_d_fin/processing/abstract_processing.py", line 595, in process
+    stems = dm.verticality_clustering(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        xyz0_coords,
+        ^^^^^^^^^^^^
+    ...<6 lines>...
+        n_digits,
+        ^^^^^^^^^
+    )[:, 0:6]
+    ^
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/dendromatics/stripe.py", line 240, in verticality_clustering
+    clust_stripe, t = verticality_clustering_iteration(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        aux_stripe,
+        ^^^^^^^^^^^
+    ...<5 lines>...
+        n_digits,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/dendromatics/stripe.py", line 71, in verticality_clustering_iteration
+    voxelated_stripe, vox_to_stripe_ind, _ = voxelate(
+                                             ~~~~~~~~^
+        stripe, resolution_xy, resolution_z, n_digits, with_n_points=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/dendromatics/voxel/voxel.py", line 67, in voxelate
+    cloud_min = np.min(cloud[:, [X_field, Y_field, Z_field]], axis=0)
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/numpy/core/fromnumeric.py", line 2953, in min
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+                          keepdims=keepdims, initial=initial, where=where)
+  File "/home/andrew/miniconda3/envs/3dfin/lib/python3.13/site-packages/numpy/core/fromnumeric.py", line 88, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation minimum which has no identity
+(3dfin) andrew@lidar-processor:~/GitHub/3DFin$ 

@@ -10,9 +10,12 @@ import rasterio
 from rasterio.transform import from_origin
 
 # Paths and parameters
-input_path  = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2.las"
-output_path = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2_z0.las"
-dtm_path    = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2_dtm_from_python.tif"
+# input_path  = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2.las"
+# output_path = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2_z0.las"
+# dtm_path    = "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_Full_sample2_dtm_from_python.tif"
+input_path  = "/home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full.las"
+output_path = "/home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full_z0.las"
+dtm_path    = "/home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full_dtm.tif"
 resolution  = 1.0  # grid cell size in same units as LAS coordinates
 
 # 1. Read the LAS file

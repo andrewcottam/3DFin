@@ -16,11 +16,9 @@
           // "/Users/andrewcottam/Documents/QGIS/Data/restor/lidar/Tahi/Tahi_Area2_full.las",
           // "/Users/andrewcottam/Documents/GitHub/3DFin/outputs/tahi_area2_full_sample",
           // "/Users/andrewcottam/Documents/GitHub/3DFin/src/three_d_fin/3DFinconfig.ini",
-          "/home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full.las",
+          "/home/andrew/Downloads/Data/tahi/lidar/Tahi_Area2_LiDAR_Full_z0.las",
           "/home/andrew/Downloads/Data/tahi/lidar/3dfin_output/tahi_area2_full",
-          "/home/andrew/GitHub/3DFin/src/three_d_fin/3DFinconfig.ini",
-          "--normalize",
-          "--denoise"
+          "/home/andrew/GitHub/3DFin/src/three_d_fin/3DFinconfig.ini"
         ],
         "console": "integratedTerminal",
         "justMyCode": false
